@@ -14,3 +14,18 @@
 * [7. Visualización Detallada de Resultados](#7-Visualización-Detallada-de-Resultados)
 * [8. Conclusiones y Recomendaciones](#8-Conclusiones-y-Recomendaciones)
 * [9. Referencias](#9-Referencias)
+
+---
+## 1. **Introducción**
+
+La ciudad de Quito, capital de Ecuador, se encuentra en una zona geográfica compleja caracterizada por su relieve montañoso, su ubicación en el Cinturón de Fuego del Pacífico y su diversidad climática. Estas condiciones naturales hacen que la urbe esté expuesta a diferentes amenazas ambientales que ponen en riesgo a su población, infraestructura y ecosistemas urbanos.
+
+Entre las amenazas más relevantes destacan:
+
+- **Sismos:** Quito se ubica sobre una zona sísmicamente activa debido a la interacción de las placas tectónicas de Nazca y Sudamericana. Los movimientos telúricos representan uno de los mayores riesgos para la ciudad, especialmente en áreas con suelos blandos o edificaciones vulnerables.
+- **Inundaciones:** Las precipitaciones intensas, combinadas con la expansión urbana y la deforestación de las laderas, incrementan la probabilidad de desbordamientos de quebradas y anegamientos en sectores bajos.
+- **Olas de calor:** El cambio climático ha provocado un aumento de las temperaturas y una mayor frecuencia de eventos extremos, afectando la salud pública, la calidad del aire y el confort térmico en zonas densamente pobladas.
+
+Frente a este contexto, resulta fundamental identificar las zonas más vulnerables de Quito mediante el uso de herramientas tecnológicas que integren información geográfica, estadística y ambiental. La programación en **Python** y los **Sistemas de Información Geográfica (SIG)** permiten analizar grandes volúmenes de datos espaciales y construir modelos predictivos que ayuden a la toma de decisiones basadas en evidencia.
+
+Este proyecto busca aplicar técnicas de **análisis espacial y modelado predictivo** para generar un **mapa de vulnerabilidad ante riesgos naturales en Quito**, integrando diversas fuentes de datos abiertos.
