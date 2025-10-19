@@ -2,7 +2,7 @@
 ### Proyecto de análisis geoespacial con Python, SIG y modelado espacial predictivo
 
 <div align="center">
-  <img src="https://i.imgur.com/y1wJk3s.jpeg" width="600" alt="Goal Purple Setup"/>
+  <img src="https://i.imgur.com/y1wJk3s.jpeg" width="600" alt="Quito City"/>
 </div>
 
 ## Contenido
