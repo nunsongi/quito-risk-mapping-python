@@ -31,4 +31,15 @@ Frente a este contexto, resulta fundamental identificar las zonas más vulnerabl
 Este proyecto busca aplicar técnicas de **análisis espacial y modelado predictivo** para generar un **mapa de vulnerabilidad ante riesgos naturales en Quito**, integrando diversas fuentes de datos abiertos.
 
 ### **Objetivo general:**
-Analizar e identificar las zonas más vulnerables de Quito frente a amenazas naturales como sismos, inundaciones y olas de calor, utilizando herramientas de programación en Python, sistemas de información geográfica (SIG) y técnicas de modelado espacial para generar un mapa predictivo de riesgo y una visualización interactiva que facilite la interpretación de resultados.
+Analizar e identificar las zonas más vulnerables de Quito frente a amenazas naturales como sismos, inundaciones y olas de calor, utilizando herramientas de programación en Python, sistemas de información geográfica (SIG) y técnicas de modelado espacial para generar un mapa predictivo de riesgo y una visualización interactiva que facilite la interpretación de resultados. 
+
+### **Objetivos específicos:**
+1. **Explorar y limpiar datasets abiertos** sobre peligros naturales (sísmicos, hidrológicos y climáticos) y características geográficas del Distrito Metropolitano de Quito.
+
+2. **Integrar y georreferenciar capas de información** (geológica, hidrológica, topográfica, demográfica y climática) en un entorno de análisis geoespacial utilizando Python y librerías como `geopandas` y `rasterio`.
+
+3. **Calcular indicadores de riesgo** combinando variables de amenaza, exposición y vulnerabilidad para cada zona o parroquia de Quito.
+
+4. **Aplicar un modelo espacial predictivo** (por ejemplo, Random Forest espacial o Regresión logística geográfica) para estimar la probabilidad de riesgo en función de las características del terreno y los eventos históricos.
+
+5. **Diseñar una visualización interactiva** de los resultados en Google Colab o mediante mapas dinámicos con `folium`o `plotly`, facilitando la interpretación de las áreas de mayor vulnerabilidad.
