@@ -29,3 +29,6 @@ Entre las amenazas más relevantes destacan:
 Frente a este contexto, resulta fundamental identificar las zonas más vulnerables de Quito mediante el uso de herramientas tecnológicas que integren información geográfica, estadística y ambiental. La programación en **Python** y los **Sistemas de Información Geográfica (SIG)** permiten analizar grandes volúmenes de datos espaciales y construir modelos predictivos que ayuden a la toma de decisiones basadas en evidencia.
 
 Este proyecto busca aplicar técnicas de **análisis espacial y modelado predictivo** para generar un **mapa de vulnerabilidad ante riesgos naturales en Quito**, integrando diversas fuentes de datos abiertos.
+
+### **Objetivo general:**
+Analizar e identificar las zonas más vulnerables de Quito frente a amenazas naturales como sismos, inundaciones y olas de calor, utilizando herramientas de programación en Python, sistemas de información geográfica (SIG) y técnicas de modelado espacial para generar un mapa predictivo de riesgo y una visualización interactiva que facilite la interpretación de resultados.
