@@ -1,6 +1,10 @@
 # 🗺️ Análisis y modelado de vulnerabilidad ante riesgos naturales en Quito
 ### Proyecto de análisis geoespacial con Python, SIG y modelado espacial predictivo
 
+<div align="center">
+  <img src="https://i.imgur.com/y1wJk3s.jpeg" width="600" alt="Goal Purple Setup"/>
+</div>
+
 ## Contenido
 * [1. Introducción](#1-Introducción)
 * [2. Importación de Librerías](#2-Importación-de-Librerías)
