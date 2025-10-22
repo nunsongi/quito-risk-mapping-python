@@ -1,4 +1,4 @@
-# 🗺️ Análisis y modelado de vulnerabilidad ante riesgos naturales en Quito
+# Análisis y modelado de vulnerabilidad ante riesgos naturales en Quito
 
 <div align="center">
   <img src="https://i.imgur.com/y1wJk3s.jpeg" width="600" alt="Quito City"/>
@@ -20,7 +20,6 @@
 * 8 Conclusiones y Recomendaciones
 * 9 Referencias
 
----
 ## 1. **Introducción**
 
 La ciudad de Quito, capital de Ecuador, se encuentra en una zona geográfica compleja caracterizada por su relieve montañoso, su ubicación en el Cinturón de Fuego del Pacífico y su diversidad climática. Estas condiciones naturales hacen que la urbe esté expuesta a diferentes amenazas ambientales que ponen en riesgo a su población, infraestructura y ecosistemas urbanos.
