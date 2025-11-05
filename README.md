@@ -96,4 +96,13 @@ Se aplicó un filtro espacial para los eventos ubicados dentro de los siguientes
 
 ---
 
+## 📊 Resultados y Archivos Exportados
+
+Volúmenes finales para la zona de interés, exportados en formato **CSV**:
+
+| Conjunto de Datos           | Registros Filtrados | Archivo Exportado      |
+| --------------------------- | ------------------: | ---------------------- |
+| **Orígenes de Sismos**      |              **18** | `quito_origins.csv`    |
+| **Registros de Magnitud**   |              **77** | `quito_magnitudes.csv` |
+| **Tiempos de Onda (Picks)** |            **1514** | `quito_picks.csv`      |
 
