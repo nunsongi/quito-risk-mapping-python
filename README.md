@@ -50,3 +50,10 @@ Analizar e identificar las zonas más vulnerables de Quito frente a amenazas nat
 
 # 📂 Sismos: Catálogos de Eventos Sísmicos
 
+## ✨ Origen y Propósito
+
+Los datos iniciales provienen de los **Catálogos Sísmicos – IG-EPN** (formato `.txt`).
+El notebook **`Limpieza_Sismos.ipynb`** procesa y limpia estos catálogos con el objetivo de obtener un conjunto de datos **filtrado geográficamente** que incluya solo los eventos sísmicos dentro de la ciudad de **Quito**.
+
+---
+
