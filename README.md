@@ -73,3 +73,14 @@ Este script transforma los datos crudos a **CSV listos para el análisis**.
 
 ---
 
+## 🗺️ Filtro Geográfico Aplicado (Quito)
+
+Se aplicó un filtro espacial para los eventos ubicados dentro de los siguientes límites:
+
+| Coordenada   | Límite Mínimo | Límite Máximo |
+| ------------ | ------------: | ------------: |
+| **Latitud**  |     **-0.50** |     **-0.05** |
+| **Longitud** |    **-78.80** |    **-78.20** |
+
+---
+
