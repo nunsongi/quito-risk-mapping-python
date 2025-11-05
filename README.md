@@ -57,3 +57,19 @@ El notebook **`Limpieza_Sismos.ipynb`** procesa y limpia estos catálogos con el
 
 ---
 
+## 🧹 Proceso de Limpieza (`Limpieza_Sismos.ipynb`)
+
+Este script transforma los datos crudos a **CSV listos para el análisis**.
+
+**Pasos principales:**
+
+* **Manejo de duplicados:** eliminación y resolución de inconsistencias en los registros.
+* **Conversión de tipos:**
+
+  * Fechas y tiempos → `datetime`
+  * Magnitudes y coordenadas → numéricos (`float`)
+* **Manejo de faltantes (NaN):** tratamiento de valores nulos.
+* **Filtros de correspondencia:** se validaron **Magnitudes** y **Picks** para asegurar su correspondencia con **Orígenes** dentro de Quito.
+
+---
+
