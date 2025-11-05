@@ -8,18 +8,18 @@
 
 ## Contenido
 
-1. Introducción
-2. Importación de Librerías
-3. Carga y Descripción Inicial de Datos
-4. Preprocesamiento y Transformación de Datos (ETL)
-   4.1 Conversión de TXT a CSV con Pandas
-   4.2 Limpieza de Datos
-   4.3 Ingeniería de Características
-5. Integración de Datasets y Análisis Exploratorio Espacial
-6. Modelado Predictivo de Riesgo
-7. Visualización de Resultados
-8. Conclusiones y Recomendaciones
-9. Referencias
+1. Introducción y Alcance
+2. Fuentes, Insumos y Esquema de Datos
+3. Configuración del Entorno y Librerías
+4. Carga de Datos (CSV) y Validación Rápida
+5. Preparación Espacial
+6. Análisis Exploratorio Espacial (EDA)
+7. Ingeniería de Características
+8. Modelado Predictivo de Riesgo
+9. Evaluación, Interpretabilidad y Incertidumbre
+10. Visualizaciones y Mapas Interactivos
+11. Conclusiones, Limitaciones y Recomendaciones
+12. Referencias
 
 ---
 
