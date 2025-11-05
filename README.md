@@ -23,6 +23,30 @@
 
 ---
 
+## 1. Introducción
+
+Quito se asienta en un entorno andino, sísmicamente activo y con climas variables que incrementan la **exposición a sismos, inundaciones y olas de calor**. La combinación de **Python** y **Sistemas de Información Geográfica (SIG)** permite integrar capas geológicas, hidrológicas, topográficas y demográficas para **cuantificar y mapear la vulnerabilidad** a nivel urbano.
+
+**Utilidad del proyecto**
+
+* **Prioriza intervenciones** (obras, mantenimiento, alertas) en zonas críticas.
+* **Soporta decisiones** de gestión de riesgos y ordenamiento territorial.
+* **Comunica evidencia** a autoridades y comunidad mediante mapas y tableros interactivos.
+
+### Objetivo general
+
+Generar un **mapa de vulnerabilidad ante riesgos naturales** en Quito (sismos, inundaciones, olas de calor) mediante análisis geoespacial en Python y modelos predictivos, con visualizaciones interactivas para facilitar la toma de decisiones.
+
+### Objetivos específicos (concisos)
+
+1. **Curar y unificar datos abiertos** de peligros naturales y contexto territorial del DMQ.
+2. **Integrar y georreferenciar capas** (geología, hidrología, topografía, clima y demografía) con `geopandas`/`rasterio`.
+3. **Construir indicadores de riesgo** combinando amenaza, exposición y vulnerabilidad por zona/parroquia.
+4. **Entrenar modelos espaciales** (p. ej., Random Forest o Regresión logística geográfica) para estimar probabilidad de riesgo.
+5. **Publicar visualizaciones interactivas** (`folium`/`plotly`) y un informe reproducible en Colab.
+
+> Resultado esperado: un **pipeline reproducible** (ETL → features → modelos → mapas) que entregue **insumos prácticos** para planificación urbana, gestión de emergencias y comunicación pública.
+
 ## 📂 Sismos: Catálogos de Eventos Sísmicos
 
 ### ✨ Origen y Propósito
