@@ -47,3 +47,6 @@ Analizar e identificar las zonas más vulnerables de Quito frente a amenazas nat
 4. **Aplicar un modelo espacial predictivo** (por ejemplo, Random Forest espacial o Regresión logística geográfica) para estimar la probabilidad de riesgo en función de las características del terreno y los eventos históricos.
 
 5. **Diseñar una visualización interactiva** de los resultados en Google Colab o mediante mapas dinámicos con `folium`o `plotly`, facilitando la interpretación de las áreas de mayor vulnerabilidad.
+
+# 📂 Sismos: Catálogos de Eventos Sísmicos
+
