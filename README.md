@@ -84,3 +84,16 @@ Se aplicó un filtro espacial para los eventos ubicados dentro de los siguientes
 
 ---
 
+## 🛠️ Limpieza de Datos Clave
+
+* **Duplicados:** detectados y removidos/resueltos.
+* **Tipos de datos:**
+
+  * `fecha_hora` → `datetime`
+  * `magnitud`, `latitud`, `longitud`, `profundidad` → `float`
+* **Valores faltantes:** imputación/eliminación según el caso y la variable.
+* **Integridad relacional:** se mantuvo consistencia entre tablas (orígenes ↔ magnitudes ↔ picks) **solo** para eventos dentro del área de Quito.
+
+---
+
+
