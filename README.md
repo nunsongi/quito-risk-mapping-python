@@ -4,6 +4,24 @@
   <img src="https://i.imgur.com/y1wJk3s.jpeg" width="600" alt="Quito City"/>
 </div>
 
+### Proyecto geoespacial con Python, SIG y modelado espacial predictivo
+
+## Contenido
+
+1. Introducción
+2. Importación de Librerías
+3. Carga y Descripción Inicial de Datos
+4. Preprocesamiento y Transformación de Datos (ETL)
+   4.1 Conversión de TXT a CSV con Pandas
+   4.2 Limpieza de Datos
+   4.3 Ingeniería de Características
+5. Integración de Datasets y Análisis Exploratorio Espacial
+6. Modelado Predictivo de Riesgo
+7. Visualización de Resultados
+8. Conclusiones y Recomendaciones
+9. Referencias
+
+---
 
 ## 📂 Sismos: Catálogos de Eventos Sísmicos
 
