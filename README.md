@@ -105,3 +105,4 @@ Volúmenes finales para la zona de interés, exportados en formato **CSV**:
 | **Registros de Magnitud**   |              **77** | `quito_magnitudes.csv` |
 | **Tiempos de Onda (Picks)** |            **1514** | `quito_picks.csv`      |
 
+Los dataset fueron sacados de INMAHUI y de Epn Scinergy 
