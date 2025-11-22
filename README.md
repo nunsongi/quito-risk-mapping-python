@@ -85,4 +85,35 @@ Los datos utilizados en este proyecto provienen de instituciones oficiales de Ec
 
 ---
 
+# Análisis y modelado de vulnerabilidad ante riesgos naturales en Quito (proyecto experimental)
+
+Este proyecto nació originalmente como un **análisis multirriesgo** para Quito (sismos, inundaciones y olas de calor) bajo el título:
+
+> **Análisis y modelado de vulnerabilidad ante riesgos naturales en Quito**
+
+Sin embargo, debido a la **limitada disponibilidad de datos suficientes y consistentes** para algunos peligros (especialmente sismos y olas de calor), el enfoque principal del repositorio se ha reorientado hacia el **riesgo asociado a lluvias intensas**.  
+
+Aun así, se conservan los notebooks y datasets sísmicos como parte de un **experimento previo** centrado en la ciudad de Quito.
+
+---
+
+## 📂 Sismos (componente experimental para Quito)
+
+Los datos de sismos utilizados provienen de los **Catálogos Sísmicos del IG-EPN** (formato `.txt`).  
+El notebook `Limpieza_Sismos.ipynb` realiza un procesamiento preliminar para obtener eventos **filtrados geográficamente** dentro del área de Quito, aplicando:
+
+- Conversión de tipos (`datetime`, `float`).
+- Manejo de valores faltantes.
+- Filtros espaciales aproximados para la ciudad de Quito.
+
+Como resultado, se generaron estos archivos CSV para la zona de Quito:
+
+| Conjunto de Datos           | Archivo Exportado      |
+| --------------------------- | ---------------------- |
+| **Orígenes de Sismos**      | `quito_origins.csv`    |
+| **Registros de Magnitud**   | `quito_magnitudes.csv` |
+| **Tiempos de Onda (Picks)** | `quito_picks.csv`      |
+
+> Debido al **bajo número de eventos sísmicos disponibles para el área de Quito**, esta parte del proyecto se mantiene solo como **exploración experimental** y no se desarrolló un modelo predictivo robusto. El foco actual del repositorio es el **riesgo por lluvias intensas**.
+
 Este repositorio incluye también un módulo experimental con datos sísmicos para Quito, documentado en Limpieza_Sismos.ipynb.
