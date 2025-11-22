@@ -1,108 +1,87 @@
-# Análisis y modelado de vulnerabilidad ante riesgos naturales en Quito
+
+# 🌧️ Análisis y modelado de riesgo por lluvias intensas en Quito con Python y SIG
 
 <div align="center">
   <img src="https://i.imgur.com/y1wJk3s.jpeg" width="600" alt="Quito City"/>
 </div>
 
-### Proyecto geoespacial con Python, SIG y modelado espacial predictivo
-
-## Contenido
-
-1. Introducción y Alcance
-2. Fuentes, Insumos y Esquema de Datos
-3. Configuración del Entorno y Librerías
-4. Carga de Datos (CSV) y Validación Rápida
-5. Preparación Espacial
-6. Análisis Exploratorio Espacial (EDA)
-7. Ingeniería de Características
-8. Modelado Predictivo de Riesgo
-9. Evaluación, Interpretabilidad y Incertidumbre
-10. Visualizaciones y Mapas Interactivos
-11. Conclusiones, Limitaciones y Recomendaciones
-12. Referencias
+> Proyecto de análisis geoespacial que utiliza datos históricos de precipitación y capas territoriales del Distrito Metropolitano de Quito para construir un **mapa de riesgo asociado a lluvias intensas**, usando Python, `pandas`, `geopandas` y herramientas de visualización.
 
 ---
 
-## 1. Introducción
+## 📚 Contenido
 
-Quito se asienta en un entorno andino, sísmicamente activo y con climas variables que incrementan la **exposición a sismos, inundaciones y olas de calor**. La combinación de **Python** y **Sistemas de Información Geográfica (SIG)** permite integrar capas geológicas, hidrológicas, topográficas y demográficas para **cuantificar y mapear la vulnerabilidad** a nivel urbano.
-
-**Utilidad del proyecto**
-
-* **Prioriza intervenciones** (obras, mantenimiento, alertas) en zonas críticas.
-* **Soporta decisiones** de gestión de riesgos y ordenamiento territorial.
-* **Comunica evidencia** a autoridades y comunidad mediante mapas y tableros interactivos.
-
-### Objetivo general
-
-Generar un **mapa de vulnerabilidad ante riesgos naturales** en Quito (sismos, inundaciones, olas de calor) mediante análisis geoespacial en Python y modelos predictivos, con visualizaciones interactivas para facilitar la toma de decisiones.
-
-### Objetivos específicos (concisos)
-
-1. **Curar y unificar datos abiertos** de peligros naturales y contexto territorial del DMQ.
-2. **Integrar y georreferenciar capas** (geología, hidrología, topografía, clima y demografía) con `geopandas`/`rasterio`.
-3. **Construir indicadores de riesgo** combinando amenaza, exposición y vulnerabilidad por zona/parroquia.
-4. **Entrenar modelos espaciales** (p. ej., Random Forest o Regresión logística geográfica) para estimar probabilidad de riesgo.
-5. **Publicar visualizaciones interactivas** (`folium`/`plotly`) y un informe reproducible en Colab.
-
-> Resultado esperado: un **pipeline reproducible** (ETL → features → modelos → mapas) que entregue **insumos prácticos** para planificación urbana, gestión de emergencias y comunicación pública.
-
-## 📂 Sismos: Catálogos de Eventos Sísmicos
-
-### ✨ Origen y Propósito
-
-Los datos iniciales provienen de los **Catálogos Sísmicos – IG-EPN** (formato `.txt`).
-El notebook **`Limpieza_Sismos.ipynb`** procesa y limpia estos catálogos con el objetivo de obtener un conjunto de datos **filtrado geográficamente** que incluya solo los eventos sísmicos dentro de la ciudad de **Quito**.
+1. [Introducción y Alcance](#1-introducción-y-alcance)  
+2. [Objetivo General](#2-objetivo-general)  
+3. [Objetivos Específicos](#3-objetivos-específicos)  
+4. [Alcance del Proyecto](#4-alcance-del-proyecto)  
+5. [Fuentes de Datos](#5-fuentes-de-datos)  
+6. [Estructura del Repositorio](#6-estructura-del-repositorio)  
+7. [Tecnologías y Librerías](#7-tecnologías-y-librerías)  
+8. [Cómo Reproducir el Análisis](#8-cómo-reproducir-el-análisis)  
+9. [Estado Actual y Trabajo Futuro](#9-estado-actual-y-trabajo-futuro)  
+10. [Referencias](#10-referencias)  
 
 ---
 
-### 🧹 Proceso de Limpieza (`Limpieza_Sismos.ipynb`)
+## 1. Introducción y Alcance
 
-Este script transforma los datos crudos a **CSV listos para el análisis**.
+Quito, capital de Ecuador, se ubica en un entorno andino con **fuerte variabilidad climática** y eventos de lluvia intensa, especialmente en ciertas épocas del año. La combinación de **pendientes pronunciadas**, **expansión urbana sobre laderas** y **sistemas de drenaje limitados** incrementa el riesgo de **inundaciones** y **anegamientos** en varios barrios del Distrito Metropolitano.
 
-**Pasos principales:**
+Las lluvias extremas pueden afectar viviendas, vías, servicios básicos y, en general, la calidad de vida de la población, especialmente en las zonas más vulnerables. Contar con un **análisis espacial de la precipitación** y un **mapa de riesgo asociado a lluvias** es clave para:
 
-* **Manejo de duplicados:** eliminación y resolución de inconsistencias en los registros.
-* **Conversión de tipos:**
+- priorizar obras e intervenciones de drenaje,
+- diseñar sistemas de alerta temprana,
+- y apoyar la planificación urbana y la gestión del riesgo climático.
 
-  * Fechas y tiempos → `datetime`
-  * Magnitudes y coordenadas → numéricos (`float`)
-* **Manejo de faltantes (NaN):** tratamiento de valores nulos.
-* **Filtros de correspondencia:** se validaron **Magnitudes** y **Picks** para asegurar su correspondencia con **Orígenes** dentro de Quito.
+Este proyecto integra datos históricos de **precipitación** con información geográfica del **Distrito Metropolitano de Quito (DMQ)** mediante Python y Sistemas de Información Geográfica (SIG), construyendo indicadores e índices de riesgo a nivel espacial.
 
 ---
 
-### 🗺️ Filtro Geográfico Aplicado (Quito)
+## 2. Objetivo General
 
-Se aplicó un filtro espacial para los eventos ubicados dentro de los siguientes límites:
-
-| Coordenada   | Límite Mínimo | Límite Máximo |
-| ------------ | ------------: | ------------: |
-| **Latitud**  |     **-0.50** |     **-0.05** |
-| **Longitud** |    **-78.80** |    **-78.20** |
+Generar un **mapa de riesgo asociado a lluvias intensas en Quito** mediante análisis geoespacial en Python, utilizando datos históricos de precipitación y capas territoriales del DMQ, con **visualizaciones estáticas e interactivas** que ayuden a interpretar las zonas más vulnerables.
 
 ---
 
-### 🛠️ Limpieza de Datos Clave
+## 3. Objetivos Específicos
 
-* **Duplicados:** detectados y removidos/resueltos.
-* **Tipos de datos:**
-
-  * `fecha_hora` → `datetime`
-  * `magnitud`, `latitud`, `longitud`, `profundidad` → `float`
-* **Valores faltantes:** imputación/eliminación según el caso y la variable.
-* **Integridad relacional:** se mantuvo consistencia entre tablas (orígenes ↔ magnitudes ↔ picks) **solo** para eventos dentro del área de Quito.
+1. **Curar y unificar datasets abiertos de precipitación** (INAMHI u otras fuentes) y recortar la información al área del Distrito Metropolitano de Quito.  
+2. **Integrar y georreferenciar capas** de estaciones meteorológicas y límites administrativos (parroquias/zonas) con `geopandas`.  
+3. **Calcular indicadores de lluvia** (por ejemplo, precipitación total anual, máxima mensual, percentiles extremos) por estación y por zona.  
+4. **Construir un índice de riesgo por lluvias** combinando intensidad de precipitación y exposición territorial (por ejemplo, zonas urbanas densas).  
+5. **Publicar mapas y visualizaciones** (con `matplotlib`, `geopandas` y, de ser posible, `folium` o `plotly`) junto a un **pipeline reproducible**:  
+   `carga de datos → limpieza (ETL) → indicadores → unión espacial → mapas`.
 
 ---
 
-### 📊 Resultados y Archivos Exportados
+## 4. Alcance del Proyecto
 
-Volúmenes finales para la zona de interés, exportados en formato **CSV**:
+- **Unidad de análisis:**  
+  - Estaciones meteorológicas de la red de INAMHI.  
+  - Parroquias y/o zonas urbanas del DMQ (según las capas de límites utilizadas).
 
-| Conjunto de Datos           | Registros Filtrados | Archivo Exportado      |
-| --------------------------- | ------------------: | ---------------------- |
-| **Orígenes de Sismos**      |              **18** | `quito_origins.csv`    |
-| **Registros de Magnitud**   |              **77** | `quito_magnitudes.csv` |
-| **Tiempos de Onda (Picks)** |            **1514** | `quito_picks.csv`      |
+- **Salidas principales:**  
+  - Mapa temático de **riesgo por lluvias intensas** en Quito.  
+  - Tablas con indicadores de precipitación y riesgo por estación / parroquia.  
 
-Los dataset fueron sacados de INMAHUI y de Epn Scinergy 
+- **Uso previsto:**  
+  - Planificación urbana y priorización de obras de drenaje.  
+  - Soporte para estudios de inundaciones y resiliencia climática.  
+  - Comunicación de riesgo climático a tomadores de decisión y ciudadanía.
+
+---
+
+## 5. Fuentes de Datos
+
+Los datos utilizados en este proyecto provienen de instituciones oficiales de Ecuador:
+
+- **Precipitación (lluvias):**  
+  - Instituto Nacional de Meteorología e Hidrología (**INAMHI**)  
+  - Archivo base: series históricas de precipitación mensual por estación.  
+
+- **Información geográfica y límites administrativos:**  
+  - Capas de límites del Distrito Metropolitano de Quito (parroquias / zonas urbanas).  
+
+---
+
